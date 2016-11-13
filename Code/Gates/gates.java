@@ -1,6 +1,11 @@
 package Gates;
 
+
 public class gates {
+	
+	public static int aa; 
+	public static int bb; 
+	public static int cc; 
 	
 	public gates(){
 		
@@ -45,6 +50,33 @@ public class gates {
 		}
 		
 		return output; 
+	}
+	
+	public static void evaluate(int num, gates i){
+		
+		if(num == 1){
+			   for (int a =0; a <= 1; a++ ) {
+		                    aa = (a==1)? 1: 0;
+		                    System.out.println(aa); 
+		            }
+		}
+		else if(num == 2){
+			
+			   for (int a =0; a <= 1; a++ ) 
+		            for (int b=0; b <= 1; b++ ){
+		                    int aa = (a==1)? 1: 0;
+		                    int bb = (b==1)? 1: 0;
+		                    System.out.println(aa + " " + bb + " | " + i ); 
+
+		            }
+			
+		}
+		else if(num == 3){
+			
+		}
+		
+		
+		
 	}
 
 }
